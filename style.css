@@ -9,6 +9,7 @@ body{
     background-size: cover;
     height: 100vh;
     background-position: center;
+    display: flex;
 }
 header{
     width: 100%;
@@ -86,6 +87,26 @@ header .menu{
     font-size: 2.5em;
     display: none;
 }
+#main-content{
+    margin-top: 100px;
+    border: 2px solid black;
+    width: 100%;
+    height: auto;
+}
+#content-home h1{
+    color: forestgreen;
+
+}
+#content-product h1{
+    color: aqua;
+}
+#content-contact h1{
+    color: aquamarine;
+}
+#content-blog h1{
+    color: red;
+}
+
 @media(max-width:1000px){
     .search-box button{
         position: absolute;
@@ -99,8 +120,9 @@ header .menu{
         width: 50%;
         flex-direction: column;
         align-items: center;
-        transition: right: 0.5s linear;
+        transition: right 0.5s linear;
     }
+    
     header .menu{
         display: block;
         width: 100px;
@@ -109,7 +131,7 @@ header .menu{
     #chk1:checked ~ ul{
         right: 0;
     }
-}
+
 @media(max-width:000px){
     header .logo{
         font-size: 10px;
@@ -119,4 +141,5 @@ header .menu{
         width: 100%;
     }
 
+}
 }
